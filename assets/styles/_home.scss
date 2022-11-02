@@ -1,0 +1,88 @@
+.homePage{
+    height: 1000px;
+    width: 100%;
+    background: url(../img/fondHeader.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width:1200px) {
+        background-image: none;
+        background: linear-gradient(180deg, #024A59 0%, #021526 100%);
+    }
+    @media (max-width:1010px) {
+       height: 1400px;
+     }
+    .title{
+        padding-top: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h1{
+            font-size: 80px;
+            color: #fff;
+            @media (max-width:800px) {
+                font-size: 60px;
+            }
+        }
+        p{
+            color: #C4C4C4;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+    }
+    .logoScroll{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .goalsBlock{
+        width: 90%;
+        margin:90px auto;
+        display: flex;
+        justify-content: space-around;
+        max-width: 1500px;
+        @media (max-width:1010px) {
+           flex-direction: column;
+           margin-top: 30px;
+           height: 800px;
+        }
+        .goal{
+            height: 220px;
+            width: 30%;
+            border: 1px solid #F5F5F5;
+            color: #F5F5F5;
+            border-radius: 15px;
+            @media (max-width:1010px) {
+               width: 90%;
+               margin: auto; 
+            }
+            .spanBlock{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                height: 40px;
+                margin-top: 20px;
+                span{
+                    font-size: 30px;
+                }
+                img{
+                    height: 30px;
+                }
+            }
+            h3{
+                margin-left: 15px;
+                font-size: 23px;
+            }
+            p{
+                margin: 23px 15px auto 15px;
+                color: #c0c0c7;
+
+            }
+        }
+    }
+}
+:hover.mouseBtn{
+  transform: scale(1.04);
+  
+}

@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-arvinberod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/styles/index.scss:./assets/styles/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^3.7.0",
+    "sass": "^1.55.0",
+    "swiper": "^8.4.4"
+  }
+}
