@@ -1,0 +1,128 @@
+.homePage{
+    height: 1000px;
+    width: 100%;
+    background: url(../img/fondHeader.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width:1200px) {
+        background-image: none;
+        background: linear-gradient(180deg, #024A59 0%, #021526 100%);
+    }
+    @media (max-width:1010px) {
+       height: 1400px;
+     }
+    .title{
+        padding-top: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        @media (max-width:1150px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @media (max-width:1050px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        h1{
+            font-size: 80px;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: apparition 0.7s 0.2s ease-out forwards;
+            @media (max-width:800px) {
+                font-size: 60px;
+            }
+        }
+        p{
+            color: #C4C4C4;
+            font-size: 22px;
+            margin-top: 30px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: apparition 0.7s 0.5s ease-out forwards;
+        }
+    }
+    .logoScroll{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: apparition 0.7s 1s ease-out forwards;
+    }
+    .goalsBlock{
+        width: 90%;
+        margin:90px auto;
+        display: flex;
+        justify-content: space-around;
+        max-width: 1500px;
+        @media (max-width:1010px) {
+           flex-direction: column;
+           margin-top: 30px;
+           height: 800px;
+        }
+        .goal{
+            height: 220px;
+            width: 30%;
+            border: 1px solid #F5F5F5;
+            color: #F5F5F5;
+            border-radius: 15px;
+            @media (max-width:1010px) {
+               width: 90%;
+               margin: auto; 
+            }
+            .spanBlock{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                height: 40px;
+                margin-top: 20px;
+                span{
+                    font-size: 30px;
+                }
+                img{
+                    height: 30px;
+                }
+            }
+            h3{
+                margin-left: 15px;
+                font-size: 23px;
+            }
+            p{
+                margin: 23px 15px auto 15px;
+                color: #c0c0c7;
+
+            }
+        }
+        .goal1{
+            opacity: 0;
+            transform: translateX(40px);
+            animation: apparition 0.7s 0.4s ease-out forwards;
+        }
+        .goal2{
+            opacity: 0;
+            transform: translateX(40px);
+            animation: apparition 0.7s 0.8s ease-out forwards;
+        }
+        .goal3{
+            opacity: 0;
+            transform: translateX(40px);
+            animation: apparition 0.7s 1.2s ease-out forwards;
+        }
+    }
+}
+:hover.mouseBtn{
+  transform: scale(1.04);
+  
+}
+
+
+@keyframes apparition {
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <title>Theo Arvin-Berod</title>
+</head>
+
+<body>
+    <div class="loader">
+        <span class="balls ball1"></span>
+        <span class="balls ball2"></span>
+        <span class="balls ball3"></span>
+    </div>
+    <header class="header">
+
+    </header>
+    <main>
+        <div class="return-span">
+            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left"
+                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="5" y1="12" x2="11" y2="18" />
+                    <line x1="5" y1="12" x2="11" y2="6" />
+                </svg>
+            </a>
+        </div>
+        <div class="title-project">
+            <h1>Groupomania</h1>
+            <p>Réseau social d'entreprise</p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="imageProject-block">
+                        <img src="./assets/img/form-groupomania.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imageProject-block">
+                        <img src="./assets/img/home-groupomania.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imageProject-block">
+                        <img src="./assets/img/home-groupomania2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <section class="description">
+            <h2> Description </h2>
+            <h3>Techno :</h3>
+            <p>React, nodeJs, Sass</p>
+            <div class="mission-block">
+                <h3>Mission :</h3>
+                <p>Authentifier un utilisateur et maintenir sa session,
+                    Gérer un stockage de données à l'aide de SQL,
+                    Implémenter un stockage de données sécurisé en utilisant SQL,
+                    Personnaliser le contenu envoyé à un client web</p>
+            </div>
+            <div class="lien-site">
+                <a href="https://github.com/theoarvin/social-network" target="_blank">Voir le code </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="conditions-block">
+        <div class="conditions-text">
+            <p>© 2022 Théo Arvin-Berod</p>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script>
+        const loader = document.querySelector(".loader");
+        window.addEventListener("load", () => {
+            loader.classList.add("fondu-out");
+            window.scroll(0, 0);
+        });
+    </script>
+</body>
+
+</html>

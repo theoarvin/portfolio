@@ -1,0 +1,197 @@
+footer {
+  width: 85%;
+  margin: auto;
+  max-width: 1500px;
+  padding-top: 100px;
+  margin-top: 150px;
+  @media (max-width:1020px) {
+   margin-top: 80px;
+  }
+  .title-footer {
+    width: 45%;
+    margin-bottom: 30px;
+    h4 {
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 24px;
+      text-align: left;
+      color: #024a59;
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    h2 {
+      margin-top: 7px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 46px;
+      line-height: 60px;
+      text-align: left;
+      color: #f5f5f5;
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    @media (max-width:1100px) {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 40px;
+      width: 70%;
+     
+    }
+    @media (max-width:700px) {
+      width: 100%;
+    }
+  }
+}
+
+.footer-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(-30px);
+  @media (max-width:1100px) {
+    height: 1100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    width: 45%;
+    @media (max-width:1100px) {
+      width: 70%;
+    }
+    @media (max-width:700px) {
+      width: 100%;
+    }
+    .form-contact {
+      height: 220px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .block-contact {
+        margin-top: 10px;
+        width: 50%;
+        height: 100px;
+        //background-color: #fff;
+        input {
+          width: 90%;
+          height: 50px;
+          border: 1px solid #f5f5f5;
+          background-color: #021526;
+          border-radius: 5px;
+          color: #f5f5f5;
+          margin-top: 15px;
+          padding-left: 15px;
+        }
+        label {
+          color: #f5f5f5;
+        }
+      }
+    }
+    .form-message {
+      margin-top: 15px;
+      input {
+        width: 95%;
+        height: 100px;
+        border: 1px solid #f5f5f5;
+        background-color: #021526;
+        border-radius: 5px;
+        color: #f5f5f5;
+        margin-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 55px;
+      }
+      label {
+        color: #f5f5f5;
+      }
+    }
+    .submit-btn {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 179px;
+      height: 58px;
+      border: 1px solid #3ca692;
+      background: #3ca692;
+      border-radius: 29px;
+      color: #f5f5f5;
+      margin-top: 40px;
+      cursor: pointer;
+    }
+  }
+  .network {
+    width: 45%;
+    height: 500px;
+    margin-top: 30px;
+    @media (max-width:1100px) {
+      width: 70%;
+    }
+    @media (max-width:700px) {
+      width: 100%;
+    }
+    .network-block {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      .logo {
+        width: 70px;
+        height: 70px;
+        background: #f5f5f5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .network-text{
+        display: flex;
+        flex-direction: column;
+        color: #f5f5f5;
+        margin-left: 30px;
+        height: 70px;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+.social-netwwork{
+  display: flex;
+}
+.social-block{
+  width: 60px;
+  height: 60px;
+  background: #021526;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f5f5f5;
+  margin-right: 30px;
+}
+.conditions-block{
+  background: #024A59;
+  height: 60px;
+  width: 100%;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  .conditions-text{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.error-block{
+  height: 20px;
+  width: 90%;
+  display: block;
+  font-size: 15px;
+ // background-color: red;
+}
