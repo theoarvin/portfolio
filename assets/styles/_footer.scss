@@ -70,11 +70,14 @@ footer {
       flex-direction: column;
       justify-content: space-around;
       flex-wrap: wrap;
+      height: 250px;
       .block-contact {
         margin-top: 10px;
         width: 50%;
         height: 100px;
-        //background-color: #fff;
+        @media (max-width:580px) {
+          margin-top: 12px;
+        }
         input {
           width: 90%;
           height: 50px;

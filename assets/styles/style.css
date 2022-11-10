@@ -515,6 +515,7 @@ h1, h2, h3, h4, h5, a {
     flex-wrap: wrap;
     margin-top: 40px;
     flex-direction: column;
+    justify-content: baseline;
     align-items: center;
     width: 90%;
     margin: auto;
@@ -819,11 +820,17 @@ footer .title-footer h2 {
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
+  height: 250px;
 }
 .footer-block .form .form-contact .block-contact {
   margin-top: 10px;
   width: 50%;
   height: 100px;
+}
+@media (max-width: 580px) {
+  .footer-block .form .form-contact .block-contact {
+    margin-top: 12px;
+  }
 }
 .footer-block .form .form-contact .block-contact input {
   width: 90%;
