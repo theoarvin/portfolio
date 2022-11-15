@@ -623,16 +623,11 @@ h1, h2, h3, h4, h5, a {
 }
 
 .projects {
-  height: 1050px;
+  height: auto;
   width: 90%;
   margin: auto;
   padding-top: 100px;
   max-width: 1500px;
-}
-@media (max-width: 1400px) {
-  .projects {
-    height: 1050px;
-  }
 }
 @media (max-width: 1020px) {
   .projects {
@@ -677,33 +672,33 @@ h1, h2, h3, h4, h5, a {
   transform: translateY(-40px);
 }
 .projects .block-cards {
-  height: 850px;
+  height: auto;
   width: 100%;
-  display: flex;
-  margin-top: 25px;
-  align-content: center;
-  flex-direction: column;
+  margin: auto;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  display: grid;
   flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
 }
 @media (max-width: 1020px) {
   .projects .block-cards {
-    flex-wrap: nowrap;
-    height: 1750px;
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    margin: auto;
   }
 }
 .projects .block-cards .project-card {
-  width: 47%;
-  height: 395px;
-  margin: 20px 20px 0 20px;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
   opacity: 0;
   transform: translateY(-10px);
 }
 @media (max-width: 1020px) {
   .projects .block-cards .project-card {
     width: 70%;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 800px) {
@@ -711,12 +706,20 @@ h1, h2, h3, h4, h5, a {
     width: 90%;
   }
 }
+@media (max-width: 500px) {
+  .projects .block-cards .project-card {
+    width: 100%;
+  }
+}
 .projects .block-cards .project-card img {
-  background: #024a59;
   width: 100%;
-  height: 292px;
   border-radius: 30px;
   object-fit: cover;
+}
+@media (max-width: 500px) {
+  .projects .block-cards .project-card img {
+    border-radius: 15px;
+  }
 }
 .projects .block-cards .project-card h3 {
   font-style: normal;
