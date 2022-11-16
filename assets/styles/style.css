@@ -689,9 +689,8 @@ h1, h2, h3, h4, h5, a {
 }
 .projects .block-cards .project-card {
   width: 90%;
-  height: auto;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   opacity: 0;
   transform: translateY(-10px);
 }
@@ -708,13 +707,13 @@ h1, h2, h3, h4, h5, a {
 }
 @media (max-width: 500px) {
   .projects .block-cards .project-card {
-    width: 100%;
+    width: 96%;
   }
 }
 .projects .block-cards .project-card img {
   width: 100%;
-  border-radius: 30px;
   object-fit: cover;
+  border-radius: 30px;
 }
 @media (max-width: 500px) {
   .projects .block-cards .project-card img {
