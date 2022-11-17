@@ -715,9 +715,20 @@ h1, h2, h3, h4, h5, a {
   object-fit: cover;
   border-radius: 30px;
 }
+@media (max-width: 600px) {
+  .projects .block-cards .project-card img {
+    height: 240px;
+  }
+}
 @media (max-width: 500px) {
   .projects .block-cards .project-card img {
+    height: 220px;
     border-radius: 15px;
+  }
+}
+@media (max-width: 434px) {
+  .projects .block-cards .project-card img {
+    height: 200px;
   }
 }
 .projects .block-cards .project-card h3 {
