@@ -183,7 +183,6 @@ let options = {
 }
 
 const handleIntersect = (entries) => {
-  console.log(entries);
 
   entries.forEach(entry => {
     if(entry.isIntersecting){
