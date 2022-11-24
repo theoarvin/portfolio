@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, a {
   padding-top: 100px;
   max-width: 1500px;
 }
-@media (max-width: 1035px) {
+@media (max-width: 1074px) {
   .aboutPage {
     justify-content: center;
     height: 750px;
@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5, a {
   opacity: 0;
   transform: translateY(-30px);
 }
-@media (max-width: 1035px) {
+@media (max-width: 1074px) {
   .aboutPage .aboutImg {
     display: none;
   }
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, a {
   width: 50%;
   height: 650px;
 }
-@media (max-width: 1035px) {
+@media (max-width: 1074px) {
   .aboutPage .aboutDesc {
     width: 80%;
   }
@@ -335,8 +335,13 @@ h1, h2, h3, h4, h5, a {
 .aboutPage .aboutDesc p {
   margin-top: 60px;
   color: #fff;
-  font-size: 20px;
   height: 160px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   opacity: 0;
   transform: translateY(-10px);
 }
@@ -345,9 +350,9 @@ h1, h2, h3, h4, h5, a {
     margin-top: 20px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .aboutPage .aboutDesc p {
-    height: 250px;
+    height: auto;
   }
 }
 .aboutPage .aboutDesc .btnBlock {
@@ -365,7 +370,7 @@ h1, h2, h3, h4, h5, a {
     width: 100%;
   }
 }
-@media (max-width: 1035px) {
+@media (max-width: 1074px) {
   .aboutPage .aboutDesc .btnBlock {
     width: 80%;
   }
