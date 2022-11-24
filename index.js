@@ -61,7 +61,7 @@ const validEmail = () => {
     return true;
   } else {
     console.log("email invalide");
-    emailError.innerHTML = "Veuillez rentrer une email valide";
+    emailError.innerHTML = "Veuillez rentrer un email valide";
     emailError.style.color = "red";
     return false;
   }
