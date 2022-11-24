@@ -20,7 +20,7 @@ body {
   background: #021526;
 }
 
-h1, h2, h3, h4, h5, a {
+h1, h2, h3, h4, h5, a, span {
   font-family: "Inter", sans-serif;
 }
 
@@ -167,10 +167,11 @@ h1, h2, h3, h4, h5, a {
     font-size: 60px;
   }
 }
-.homePage .title p {
+.homePage .title h2 {
   color: #C4C4C4;
   font-size: 22px;
   margin-top: 30px;
+  font-family: "Lato", sans-serif;
   opacity: 0;
   transform: translateY(30px);
   animation: apparition 0.7s 0.5s ease-out forwards;
@@ -273,9 +274,14 @@ h1, h2, h3, h4, h5, a {
     height: 750px;
   }
 }
+@media (max-width: 600px) {
+  .aboutPage {
+    margin-bottom: 100px;
+  }
+}
 @media (max-width: 500px) {
   .aboutPage {
-    height: 1000px;
+    height: auto;
   }
 }
 .aboutPage .aboutImg {
@@ -308,7 +314,12 @@ h1, h2, h3, h4, h5, a {
     width: 90%;
   }
 }
-.aboutPage .aboutDesc h4 {
+@media (max-width: 500px) {
+  .aboutPage .aboutDesc {
+    height: auto;
+  }
+}
+.aboutPage .aboutDesc h2 {
   color: #024a59;
   font-style: normal;
   font-weight: 300;
@@ -317,7 +328,7 @@ h1, h2, h3, h4, h5, a {
   opacity: 0;
   transform: translateY(-30px);
 }
-.aboutPage .aboutDesc h2 {
+.aboutPage .aboutDesc h3 {
   margin-top: 60px;
   color: #fff;
   font-weight: 900;
@@ -327,7 +338,7 @@ h1, h2, h3, h4, h5, a {
   transform: translateY(-20px);
 }
 @media (max-width: 1325px) {
-  .aboutPage .aboutDesc h2 {
+  .aboutPage .aboutDesc h3 {
     margin-top: 20px;
     font-size: 36px;
   }
@@ -486,7 +497,7 @@ h1, h2, h3, h4, h5, a {
     width: 90%;
   }
 }
-.services .services-title h4 {
+.services .services-title span {
   font-weight: 400;
   font-size: 23px;
   line-height: 24px;
@@ -495,7 +506,7 @@ h1, h2, h3, h4, h5, a {
   opacity: 0;
   transform: translateY(-30px);
 }
-.services .services-title h2 {
+.services .services-title h3 {
   margin-top: 7px;
   font-style: normal;
   font-weight: 900;
@@ -656,7 +667,7 @@ h1, h2, h3, h4, h5, a {
     width: 100%;
   }
 }
-.projects .projects-title h4 {
+.projects .projects-title span {
   font-weight: 400;
   font-size: 23px;
   line-height: 24px;
@@ -753,7 +764,7 @@ h1, h2, h3, h4, h5, a {
   margin-left: 10px;
 }
 
-footer {
+#contact {
   width: 85%;
   margin: auto;
   max-width: 1500px;
@@ -761,15 +772,15 @@ footer {
   margin-top: 150px;
 }
 @media (max-width: 1020px) {
-  footer {
+  #contact {
     margin-top: 80px;
   }
 }
-footer .title-footer {
+#contact .title-footer {
   width: 45%;
   margin-bottom: 30px;
 }
-footer .title-footer h4 {
+#contact .title-footer span {
   font-weight: 400;
   font-size: 23px;
   line-height: 24px;
@@ -778,7 +789,7 @@ footer .title-footer h4 {
   opacity: 0;
   transform: translateY(-10px);
 }
-footer .title-footer h2 {
+#contact .title-footer h2 {
   margin-top: 7px;
   font-style: normal;
   font-weight: 900;
@@ -790,7 +801,7 @@ footer .title-footer h2 {
   transform: translateY(-20px);
 }
 @media (max-width: 1100px) {
-  footer .title-footer {
+  #contact .title-footer {
     margin: auto;
     text-align: center;
     margin-bottom: 40px;
@@ -798,7 +809,7 @@ footer .title-footer h2 {
   }
 }
 @media (max-width: 700px) {
-  footer .title-footer {
+  #contact .title-footer {
     width: 100%;
   }
 }
