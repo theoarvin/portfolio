@@ -26,6 +26,7 @@
             padding-right: 0px;
         }
         h1{
+            display: block;
             font-size: 80px;
             color: #fff;
             opacity: 0;
@@ -116,8 +117,8 @@
     }
 }
 :hover.mouseBtn{
-  transform: scale(1.04);
-  
+    transition: all 0.5s;
+    transform: translateY(10px);
 }
 
 

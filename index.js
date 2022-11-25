@@ -2,8 +2,11 @@
 const loader = document.querySelector(".loader");
 
 window.addEventListener("load", () => {
-  loader.classList.add("fondu-out");
-  window.scroll(0, 0);
+  setTimeout(() => {
+    loader.classList.add("fondu-out");
+    window.scroll(0, 0);
+  },1000)
+
 });
 
 // menu responsive
