@@ -2,11 +2,8 @@
 const loader = document.querySelector(".loader");
 
 window.addEventListener("load", () => {
-  setTimeout(() => {
     loader.classList.add("fondu-out");
     window.scroll(0, 0);
-  },1000)
-
 });
 
 // menu responsive
@@ -115,7 +112,6 @@ const validMessage = () => {
     return true;
   }
 };
-
 // écoute et validation du formulaire
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -155,10 +151,7 @@ form.addEventListener("submit", (e) => {
   }
   
 });
-
-
 // ----- animation au scroll ----- //
-
 // récupération des éléments de about
 const imgAbout = document.querySelector(".aboutImg");
 const aboutTitle1 = document.querySelector(".about-title1");
@@ -227,20 +220,3 @@ projectCard.forEach(block => {
 footerScroll.forEach(footer => {
   observer.observe(footer)
 })
-
-
-
-
-/*Cher réseau,
-
-Ayant fraichement validé ma première année de développeur web avec les technologies nodejs et react, pour cette rentrée 2022 je vous propose ma collaboration de dev web dans le cadre d’une alternance (4 jours en entreprise par semaine, contrat de 2 ans) pour ma formation avec openclassrooms de developpeur React niveau 6 (bac+3).
-Passionné par le monde informatique et celui du développement et désireux d’assurer ma montée en compétences dans ce domaine notamment le framework React. J’aimerais rejoindre une entreprise pour laquelle je pourrais appliquer et enrichir mes connaissances.
-
-Basé dans les alentours d'annecy, je reste mobile si une belle opportunité se présente !
-
-Je vous laisse également le lien vers mon portfolio:
-
-et mon gitHub:
-
-
-Merci pour votre aide 😊 */
